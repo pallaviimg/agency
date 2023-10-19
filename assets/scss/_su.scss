@@ -51,15 +51,16 @@
                     & span{
                         position: relative;
                         display: inline-block;
-                        animation: flip 5s infinite;
-                        animation-delay: calc(.2s*var(--i));
+                        animation: flip .3s 1;
+                        animation-delay: calc(.11s*var(--i));
                     }
                 }
             }
         }
         @keyframes flip{
-            0%, 80% {
-                transform: rotateY(360deg);
+            50% {
+                // transform: rotateY(360deg);
+                transform: scaleX(0);
             }
         }
     }
@@ -71,7 +72,7 @@
         & .BigIamge{
             overflow: hidden;
             border-radius: 15px;
-            margin-top: -270px;
+            margin-top: -300px;
             aspect-ratio: 2/1;
             & img{
                 overflow: hidden;
@@ -89,11 +90,57 @@
             margin-top: 120px;
         }
         & .cardRow{
-            margin-top: 100px;
+            margin-block: 100px;
             & .mainCard{
+                position: relative;
+                transition: all .3s ease-in-out;
+                padding-left: 20px;
+                padding-block: 20px;
                 & .cardImg{
-                    height: 55px;
-                    width: 55px;
+                    height: 50px;
+                    width: 50px;
+                    transition: all .3s ease-in-out;
+                    & img{
+                        filter: contrast(0);
+                        transition: all .3s ease-in-out;
+                        transform: rotate(360deg);
+                    }
+                }
+                & .cardHeading{
+                    padding-top: 30px;
+                }
+                & .cardbtn{
+                    height: 20px;
+                    width: 20px;
+                    margin-top: 30px;
+                    & img{
+                        filter: contrast(0);
+                        transition: all .3s ease-in-out;
+                    }
+                }
+                &::after{
+                    content: "";
+                    position: absolute;
+                    top: 0;
+                    right: 0%;
+                    height: 100%;
+                    width: 1px;
+                    background-color: #F2F2F2;
+                    opacity: 0.4;
+                }
+                &:hover{
+                    & .cardImg{
+                        & img{
+                            transform: rotate(-360deg) scale(1.1);
+                            filter: none;
+                        }
+                    }
+                    & .cardbtn{
+                        & img{
+                            filter: none;
+                            transform: rotate(45deg);
+                        }
+                    }
                 }
             }
         }
