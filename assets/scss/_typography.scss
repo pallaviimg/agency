@@ -1,9 +1,10 @@
 // For Normal Text
 
 .body_text{
-    font-size: 16px;
     color: $black;
-    line-height: 1.8;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 30px;
     @include sm{
 
     }
@@ -93,9 +94,10 @@
 // For Heading
 
 .body_heading{
-    font-size: 16px;
-    font-weight: 700;
     color: $black;
+    font-size: 64px;
+    font-weight: 700;
+    line-height: 76.8px;
     @include sm{
 
     }
@@ -155,9 +157,12 @@
 // For Subheading
 
 .body_subheading{
-    font-size: 14px;
-    font-weight: 700;
-    color: $gray-600;
+    color: $black;
+    font-size: 13px;
+    font-weight: 500;
+    text-transform: uppercase;
+    line-height: 18px;
+    letter-spacing: 1.56px;
     @include sm{
 
     }
