@@ -115,7 +115,7 @@
 }
 
 .body_heading_small{
-    font-size: 14px;
+    font-size: 25px;
     font-weight: 700;
     color: $black;
     @include sm{
@@ -217,4 +217,7 @@
     }@include xxl{
         
     }
+}
+.opColor{
+    color: #A7BABA;
 }

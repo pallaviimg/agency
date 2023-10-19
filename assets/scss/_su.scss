@@ -1,0 +1,101 @@
+// hero section start
+    .heroSection{
+        padding-top: 150px;
+        height: 100vh;
+        & .mySubheading{
+            background-color: #F2F2F2;
+            display: inline-flex;
+            padding: 2px 20px 2px 20px;
+            border-radius: 100px;
+            font-weight: 700;
+            margin-bottom: 15px;
+        }
+        & .myHeading{}
+        & .mytxt{
+            padding: 15px 0 0 40px;
+        }
+        & .body_Animation{
+            padding: 75px 0 0 40px;
+            & .waivyanc{
+                font-size: 21px;
+            }
+            & .waviy{
+                position: relative;
+                font-size: 21;
+                font-weight: 700;
+                padding: 14px;
+                & span{
+                    transition: all .3s ease-in-out;
+                }
+                & .rotatetxt{
+                }
+            }
+            & .pinkImage{
+                position: relative;
+                &::after{
+                    content: '';
+                    position: absolute;
+                    background: linear-gradient(90deg,#ff7369 0%,#ffb06d 100%);
+                    width: 30px;
+                    height: 30px;
+                    border-radius: 50%;
+                    z-index: -1;
+                    top: 50%;
+                    transform: translateY(-50%);
+                    clip-path: polygon(54% 9%, 83% 12%, 100% 43%, 94% 85%, 68% 100%, 32% 100%, 6% 78%, 3% 34%, 30% 18%);
+                    right: -35px;
+                }
+            }
+            &:hover{
+                & .waviy{
+                    & span{
+                        position: relative;
+                        display: inline-block;
+                        animation: flip 5s infinite;
+                        animation-delay: calc(.2s*var(--i));
+                    }
+                }
+            }
+        }
+        @keyframes flip{
+            0%, 80% {
+                transform: rotateY(360deg);
+            }
+        }
+    }
+// hero section Ends
+
+// setion Two start
+    .setionTwo{
+        background-color: $black;
+        & .BigIamge{
+            overflow: hidden;
+            border-radius: 15px;
+            margin-top: -270px;
+            aspect-ratio: 2/1;
+            & img{
+                overflow: hidden;
+                transform: scale3d(1.5,1.5,1);
+                transition: transform 5s ease-in-out;
+            }
+            
+        }
+        &:hover{
+            & img{
+                transform: scale(1);
+            }
+        }
+        & .content{
+            margin-top: 120px;
+        }
+        & .cardRow{
+            margin-top: 100px;
+            & .mainCard{
+                & .cardImg{
+                    height: 55px;
+                    width: 55px;
+                }
+            }
+        }
+    }
+// setion Two Ends
