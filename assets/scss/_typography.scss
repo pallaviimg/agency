@@ -2,22 +2,20 @@
 
 .body_text{
     color: $black;
-    font-size: 20px;
+    font-size: 15px;
     font-weight: 400;
-    line-height: 30px;
+    line-height: 143%;
     @include sm{
-
+        font-size: 16px;
     }
     @include md{
-        
+        font-size: 17px;
     }
     @include lg{
-        
+        font-size: 18px;
     }
     @include xl{
-        
-    }@include xxl{
-        
+        font-size: 20px;
     }
 }
 
@@ -42,23 +40,19 @@
 }
 
 .body_text_large{
-    font-size: 18px;
+    font-size: 15px;
     color: $black;
-    line-height: 1.8;
+    line-height: 130%;
     @include sm{
-
+        font-size: 16px;
     }
     @include md{
-        
+        font-size: 17px;
     }
     @include lg{
-        
+        font-size: 18px;
     }
-    @include xl{
-        
-    }@include xxl{
-        
-    }
+    
 }
 
 // For Space Between Sections Must Apply On Container Fluid
@@ -95,87 +89,79 @@
 
 .body_heading{
     color: $black;
-    font-size: 64px;
+    font-size: 30px;
     font-weight: 700;
-    line-height: 76.8px;
+    line-height: 130%;
     @include sm{
-
+        font-size: 35px;
     }
     @include md{
-        
+        font-size: 36px;
     }
     @include lg{
-        
+        font-size: 42px;
     }
     @include xl{
-        
+        font-size: 51px;
     }@include xxl{
-        
+        font-size: 59px;
     }
 }
 
 .body_heading_small{
-    font-size: 25px;
-    font-weight: 700;
+    font-size: 17px;
+    font-weight: 600;
     color: $black;
     @include sm{
-
+        font-size: 18px;
     }
     @include md{
-        
+        font-size: 16px;
     }
     @include lg{
-        
+        font-size: 20px;
     }
     @include xl{
-        
+        font-size: 22px;
     }@include xxl{
-        
+        font-size: 25px;
     }
 }
 
 .body_heading_large{
-    font-size: 18px;
-    font-weight: 700;
     color: $black;
+    font-size: 25px;
+    font-weight: 600;
+    line-height: 125%;
     @include sm{
-
+        font-size: 30px;
     }
     @include md{
-        
+        font-size: 35px;
     }
     @include lg{
-        
+        font-size: 40px;
     }
     @include xl{
-        
+        font-size: 45px;
     }@include xxl{
-        
+        font-size: 48px;
     }
 }
 
 // For Subheading
 
 .body_subheading{
+    font-size: 17px;
+    font-weight: 600;
     color: $black;
-    font-size: 13px;
-    font-weight: 500;
-    text-transform: uppercase;
-    line-height: 18px;
-    letter-spacing: 1.56px;
-    @include sm{
-
-    }
-    @include md{
-        
-    }
     @include lg{
-        
+        font-size: 18px;
     }
     @include xl{
-        
+        font-size: 20px;
     }@include xxl{
-        
+        font-size: 22px;
     }
 }
 
@@ -220,4 +206,7 @@
 }
 .opColor{
     color: #A7BABA;
+}
+body{
+    font-family: Montserrat !important;
 }
