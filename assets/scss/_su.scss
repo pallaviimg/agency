@@ -1,7 +1,41 @@
+// main Start
+    .main{
+        & .threelines{
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 0 23.73%;
+            position: absolute;
+            left: 0;
+            top: 0;
+            right: 0;
+            bottom: 0;
+            width: 100%;
+            overflow: hidden;
+            z-index: -1;
+            & .line{
+                background-color: #ececec;
+                display: inline-block;
+                width: 1px;
+                height: 100%;
+            }
+        }
+    }
+// main Ends
+
 // hero section start
     .heroSection{
-        padding-top: 150px;
-        height: 100vh;
+        padding-top: 30px;
+        height: 65vh;
+        @include sm{
+            height: 85vh;
+        }
+        @include md{
+            height: 100vh;
+        }
+        @include xxl{
+            padding-top: 130px;
+        }
         & .mySubheading{
             background-color: #F2F2F2;
             display: inline-flex;
@@ -41,22 +75,22 @@
             }
             & .waviy{
                 position: relative;
-                font-size: 17px;
-                font-weight: 700;
-                // padding: 14px;
+                font-size: 16px;
+                font-weight: 600;
                 @include sm{
-                    font-size: 18px;
+                    font-size: 16px;
                 }
                 @include md{
-                    font-size: 19px;
+                    font-size: 17px;
                 }
                 @include lg{
-                    font-size: 21px;
+                    font-size: 19px;
                 }
                 & span{
                     transition: all .3s ease-in-out;
                 }
                 & .rotatetxt{
+                margin-left: -3px;
                 }
             }
             & .pinkImage{
@@ -101,13 +135,19 @@
         & .BigIamge{
             overflow: hidden;
             border-radius: 15px;
-            margin-top: -300px;
+            margin-top: -105px;
             aspect-ratio: 2/1;
             @include sm{
-                margin-top: -250px;
+                margin-top: -255px;
+            }
+            @include md{
+                margin-top: -350px;
             }
             @include lg{
-                margin-top: -300px;
+                margin-top: -400px;
+            }
+            @include xxl{
+                margin-top: -320px;
             }
             & img{
                 overflow: hidden;
@@ -122,7 +162,7 @@
             }
         }
         & .content{
-            margin-top: 80px;
+            margin-top: 50px;
             @include lg{
                 margin-top: 80px;
             }
@@ -131,7 +171,13 @@
             }
         }
         & .cardRow{
-            margin-block: 60px;
+            margin-block: 30px;
+            @include sm{
+                margin-top: 40px;
+            }
+            @include md{
+                margin-top: 50px;
+            }
             @include lg{
                 margin-top: 70px;
             }
@@ -252,26 +298,74 @@
                 width: 80%;
                 bottom: -4%;
                 right: -28%;
+                @include sm{}
+                @include sm{}
+                @include lg{
+                    width: 75%;
+                    right: -22%;
+                }
+                @include xl{
+                    height: 70%;
+                    width: 80%;
+                    bottom: -4%;
+                    right: -28%;
+                }
             }
         }
         & .unlocktxt{
-            padding-left: 133px;
+            padding-left: 0px;
+            padding-top: 45px;
+            @include sm{}
+            @include md{
+                padding-top: 45px;
+            }
+            @include lg{
+                padding-left: 70px;
+                padding-top: 0;
+            }
+            @include xl{
+                padding-left: 133px;
+            }
             & .unlocktxtHeading{
-                padding-top: 50px;
+                padding-top: 0px;
+                @include xxl{
+                    padding-top: 50px;
+                }
             }
             & .mainCard{
-                padding-top: 45px;
-                padding-left: 60px;
+                padding-top: 20px;
+                padding-left:20px;
+                @include sm{
+                    padding-left: 30px;
+                    padding-top: 30px;
+                }
+                @include xl{
+                    padding-top: 45px
+                }
                 & .unlockIcon{
-                    height: 55px;
-                    width: 55px;
+                    height: 45px;
+                    width: 45px;
                     padding: 10px;
+                    @include lg{
+                        height: 55px;
+                        width: 55px;
+                    }
                 }
                 & .unlockIconTxt{
                     & .carddescription{
-                        padding-top: 20px;
+                        padding-top: 12px;
                         opacity: 0.8;
+                        @include sm{
+                            padding-top: 20px;
+                        }
                     }
+                }
+            }
+            & .mainBtndiv{
+                padding-left: 0px;
+                padding-top: 45px;
+                @include lg{
+                    padding-left: 60px;
                 }
             }
         }

@@ -8,236 +8,377 @@
     <link rel="stylesheet" href="assets/bootstrap/bootstrap.css">
 </head>
 <body>
-    <!-- hero section start -->
-    <div class="container-fluid heroSection">
-        <div class="container">
-            <div class="row">
-                <div class="col-12 col-lg-7">
-                    <div class="body_subheading mySubheading">
-                        PAYMENT PROVIDING SERVICES PLATFORM
-                    </div>
-                    <div class="body_heading myHeading">
-                        The world's top creative Marketing Agency
-                    </div>
+    <!-- navbar start -->
+        <nav class="navbar navbar-expand-xl  container-fluid px-3" aria-label="Offcanvas navbar large">
+            <a class="navLogo d-flex align-items-center" href="javascript:;"><img src="assets/img/navbar/logo.png" alt="logo" class="img-fluid w-100 h-100"></a>
+            <button class="navbar-toggler d-xl-none d-flex align-items-center border-0 shadow-none "  type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasNavbar2" aria-controls="offcanvasNavbar2" aria-label="Toggle navigation">
+            <span class="menuIcon d-inline-flex align-items-center"> <img src="assets/img/navbar/menu.svg" alt="menu" class="img-fluid w-100 h-100"></span>
+            </button>
+            <div class="offcanvas offcanvas-end text-bg-dark d-xl-block d-none" >
+            
+            <div class="offcanvas-body ">
+                <ul class="navbar-nav justify-content-center gap-4 flex-grow-1 pe-3">
+                    <li class="nav-item navItem">
+                    <a class="nav-link d-flex align-items-center mainLink" aria-current="page" href="#"><span class="d-inline-flex align-items-center navLink active">home</span>  <span class="d-inline-flex align-items-center arrowIcon"><img src="assets/img/navbar/downarrow.png" alt="downarrow" class="img-fluid w-100 h-100"></span></a>
+                    <ul class="sub-menu">
+                        <li>
+                            <a href="javascript:;" class="subMenuLink d-flex align-items-center">
+                                <span class="d-inline-flex align-items-center innerSubMenu">Home IT Service</span>
+                            </a>
+                        </li>
+                            <li>
+                            <a href="javascript:;" class="subMenuLink d-flex align-items-center">
+                                <span class="d-inline-flex align-items-center innerSubMenu">Home Digital Marketing</span>
+                            </a>
+                        </li>
+                            <li>
+                            <a href="javascript:;" class="subMenuLink d-flex align-items-center">
+                                <span class="d-inline-flex align-items-center innerSubMenu">Home SEO Service (Light)</span>
+                            </a>
+                        </li>
+                            <li>
+                            <a href="javascript:;" class="subMenuLink d-flex align-items-center">
+                                <span class="d-inline-flex align-items-center innerSubMenu">Home SEO Service (Dark)</span>
+                            </a>
+                        </li>
+                            <li>
+                            <a href="javascript:;" class="subMenuLink d-flex align-items-center">
+                                <span class="d-inline-flex align-items-center innerSubMenu">Home Lead Capture</span>
+                            </a>
+                        </li>
+                            <li>
+                            <a href="javascript:;" class="subMenuLink d-flex align-items-center">
+                                <span class="d-inline-flex align-items-center innerSubMenu">Home Digital Studio</span>
+                            </a>
+                        </li>
+                            <li>
+                            <a href="javascript:;" class="subMenuLink d-flex align-items-center">
+                                <span class="d-inline-flex align-items-center innerSubMenu">Home Startup</span>
+                            </a>
+                        </li>
+                    </ul>
+                    </li>
+                    <li class="nav-item navItem">
+                    <a class="nav-link d-flex align-items-center mainLink" aria-current="page" href="#"><span class="d-inline-flex align-items-center navLink active">Page</span>  <span class="d-inline-flex align-items-center arrowIcon"><img src="assets/img/navbar/downarrow.png" alt="downarrow" class="img-fluid w-100 h-100"></span></a>
+                    <ul class="sub-menu">
+                        <li>
+                            <a href="javascript:;" class="subMenuLink d-flex align-items-center">
+                                <span class="d-inline-flex align-items-center innerSubMenu">About</span>
+                            </a>
+                        </li>
+                            <li>
+                            <a href="javascript:;" class="subMenuLink d-flex align-items-center">
+                                <span class="d-inline-flex align-items-center innerSubMenu">Our Team</span>
+                            </a>
+                        </li>
+                            <li>
+                            <a href="javascript:;" class="subMenuLink d-flex align-items-center">
+                                <span class="d-inline-flex align-items-center innerSubMenu">Team Single</span>
+                            </a>
+                        </li>
+                            <li>
+                            <a href="javascript:;" class="subMenuLink d-flex align-items-center">
+                                <span class="d-inline-flex align-items-center innerSubMenu">Contact</span>
+                            </a>
+                        </li>
+                            <li>
+                            <a href="javascript:;" class="subMenuLink d-flex align-items-center">
+                                <span class="d-inline-flex align-items-center innerSubMenu">FAQs</span>
+                            </a>
+                        </li>
+                            <li>
+                            <a href="javascript:;" class="subMenuLink d-flex align-items-center">
+                                <span class="d-inline-flex align-items-center innerSubMenu">Pricing Table</span>
+                            </a>
+                        </li>
+                            <li>
+                            <a href="javascript:;" class="subMenuLink d-flex align-items-center">
+                                <span class="d-inline-flex align-items-center innerSubMenu">404</span>
+                            </a>
+                        </li>
+                    </ul>
+                    </li>
+                    <li class="nav-item navItem">
+                    <a class="nav-link d-flex align-items-center mainLink" aria-current="page" href="#"><span class="d-inline-flex align-items-center navLink active">Services</span>  <span class="d-inline-flex align-items-center arrowIcon"><img src="assets/img/navbar/downarrow.png" alt="downarrow" class="img-fluid w-100 h-100"></span></a>
+                    <ul class="sub-menu">
+                        <li>
+                            <a href="javascript:;" class="subMenuLink d-flex align-items-center">
+                                <span class="d-inline-flex align-items-center innerSubMenu">Our Services 1</span>
+                            </a>
+                        </li>
+                            <li>
+                            <a href="javascript:;" class="subMenuLink d-flex align-items-center">
+                                <span class="d-inline-flex align-items-center innerSubMenu">Our Services 2</span>
+                            </a>
+                        </li>
+                            <li>
+                            <a href="javascript:;" class="subMenuLink d-flex align-items-center">
+                                <span class="d-inline-flex align-items-center innerSubMenu">Service Single</span>
+                            </a>
+                        </li>
+                            <!-- <li>
+                            <a href="javascript:;" class="subMenuLink d-flex align-items-center">
+                                <span class="d-inline-flex align-items-center innerSubMenu">Home SEO Service (Dark)</span>
+                            </a>
+                        </li>
+                            <li>
+                            <a href="javascript:;" class="subMenuLink d-flex align-items-center">
+                                <span class="d-inline-flex align-items-center innerSubMenu">Home Lead Capture</span>
+                            </a>
+                        </li>
+                            <li>
+                            <a href="javascript:;" class="subMenuLink d-flex align-items-center">
+                                <span class="d-inline-flex align-items-center innerSubMenu">Home Digital Studio</span>
+                            </a>
+                        </li>
+                            <li>
+                            <a href="javascript:;" class="subMenuLink d-flex align-items-center">
+                                <span class="d-inline-flex align-items-center innerSubMenu">Home Startup</span>
+                            </a>
+                        </li> -->
+                    </ul>
+                    </li>
+                    <li class="nav-item navItem">
+                    <a class="nav-link d-flex align-items-center mainLink" aria-current="page" href="#"><span class="d-inline-flex align-items-center navLink active">Portfolio</span>  <span class="d-inline-flex align-items-center arrowIcon"><img src="assets/img/navbar/downarrow.png" alt="downarrow" class="img-fluid w-100 h-100"></span></a>
+                    <ul class="sub-menu">
+                        <li>
+                            <a href="javascript:;" class="subMenuLink d-flex align-items-center">
+                                <span class="d-inline-flex align-items-center innerSubMenu">Portfolio Style 1</span>
+                            </a>
+                        </li>
+                            <li>
+                            <a href="javascript:;" class="subMenuLink d-flex align-items-center">
+                                <span class="d-inline-flex align-items-center innerSubMenu">Portfolio Style 2</span>
+                            </a>
+                        </li>
+                            <li>
+                            <a href="javascript:;" class="subMenuLink d-flex align-items-center">
+                                <span class="d-inline-flex align-items-center innerSubMenu">Portfolio Style 3</span>
+                            </a>
+                        </li>
+                            <li>
+                            <a href="javascript:;" class="subMenuLink d-flex align-items-center">
+                                <span class="d-inline-flex align-items-center innerSubMenu">Portfolio Details</span>
+                            </a>
+                        </li>
+                    </ul>
+                    </li>
+                    <li class="nav-item navItem">
+                    <a class="nav-link d-flex align-items-center mainLink" aria-current="page" href="#"><span class="d-inline-flex align-items-center navLink active">Blog</span>  <span class="d-inline-flex align-items-center arrowIcon"><img src="assets/img/navbar/downarrow.png" alt="downarrow" class="img-fluid w-100 h-100"></span></a>
+                    <ul class="sub-menu">
+                        <li>
+                            <a href="javascript:;" class="subMenuLink d-flex align-items-center">
+                                <span class="d-inline-flex align-items-center innerSubMenu">Blog Grid</span>
+                            </a>
+                        </li>
+                            <li>
+                            <a href="javascript:;" class="subMenuLink d-flex align-items-center">
+                                <span class="d-inline-flex align-items-center innerSubMenu">Blog Single</span>
+                            </a>
+                        </li>
+                    </ul>
+                    </li>
+                    <li class="nav-item navItem">
+                    <a class="nav-link d-flex align-items-center mainLink" aria-current="page" href="#"><span class="d-inline-flex align-items-center navLink active">Shop</span>  <span class="d-inline-flex align-items-center arrowIcon"><img src="assets/img/navbar/downarrow.png" alt="downarrow" class="img-fluid w-100 h-100"></span></a>
+                    <ul class="sub-menu">
+                        <li>
+                            <a href="javascript:;" class="subMenuLink d-flex align-items-center">
+                                <span class="d-inline-flex align-items-center innerSubMenu">Shop</span>
+                            </a>
+                        </li>
+                            <li>
+                            <a href="javascript:;" class="subMenuLink d-flex align-items-center">
+                                <span class="d-inline-flex align-items-center innerSubMenu">Cart</span>
+                            </a>
+                        </li>
+                            <li>
+                            <a href="javascript:;" class="subMenuLink d-flex align-items-center">
+                                <span class="d-inline-flex align-items-center innerSubMenu">Checkout</span>
+                            </a>
+                        </li>
+                            <li>
+                            <a href="javascript:;" class="subMenuLink d-flex align-items-center">
+                                <span class="d-inline-flex align-items-center innerSubMenu">Wishlist</span>
+                            </a>
+                        </li>
+                    </ul>
+                    </li>
+                </ul>
+                <div class="pxl-button d-flex align-items-center">
+                    <a class=" pxl-wobble pxl-icon--right" href="javascript:;" data-wow-delay="ms">
+                    <span class="letter pxl-jump">C</span>
+                    <span class="letter pxl-jump">o</span>
+                    <span class="letter pxl-jump">n</span>
+                    <span class="letter pxl-jump">t</span>
+                    <span class="letter pxl-jump">a</span>
+                    <span class="letter pxl-jump">c</span>
+                    <span class="letter pxl-jump">t</span>
+                    <span class="letter pxl-jump">&nbsp;</span>
+                    <span class="letter pxl-jump">U</span>
+                    <span class="letter pxl-jump">s</span>
+                    </a>
                 </div>
-                <div class="col-12 col-lg-5">
-                    <div class="body_text mytxt">
-                        We will optimize your sales funnel, review how we acquire customers and suggest how you could do more effectively by attracting more of them.
-                    </div>
-                    <div class="body_Animation position-relative">
-                        <a href="javascript:;" class="text-decoration-none waivyanc stretched-link">
-                            <span class="waviy">
-                                <span style="--i:1" class="text-dark heading rotatetxt">D</span>
-                                <span style="--i:2" class="text-dark heading rotatetxt">i</span>
-                                <span style="--i:3" class="text-dark heading rotatetxt">s</span>
-                                <span style="--i:4" class="text-dark heading rotatetxt">c</span>
-                                <span style="--i:5" class="text-dark heading rotatetxt">o</span>
-                                <span style="--i:6" class="text-dark heading rotatetxt">v</span>
-                                <span style="--i:7" class="text-dark heading rotatetxt">e</span>
-                                <span style="--i:8" class="text-dark heading rotatetxt">r</span>
-                                &nbsp;
-                                <span style="--i:9" class="text-dark heading rotatetxt">D</span>
-                                <span style="--i:10" class="text-dark heading rotatetxt">i</span>
-                                <span style="--i:11" class="text-dark heading rotatetxt">g</span>
-                                <span style="--i:12" class="text-dark heading rotatetxt">i</span>
-                                <span style="--i:13" class="text-dark heading rotatetxt">c</span>
-                                <span style="--i:14" class="text-dark heading rotatetxt">o</span>
-                                <span style="--i:15" class="text-dark heading rotatetxt">v</span>
-                                <span style="--i:16" class="text-dark heading ">e</span>
-                            </span>
-                            <span class="pinkImage">
-                            </span>
-                        </a>
-                    </div>
-                </div>
-                
             </div>
         </div>
-    </div>
-    <!-- hero section ends -->
+        
+        </nav>
+    <!-- navbar end  -->
 
-    <!-- sectionTwo Start -->
-    <div class="container-fluid setionTwo section_spacing">
-        <div class="container">
-            <div class="row justify-content-center">
-                <div class="col-12">
-                    <div class="BigIamge">
-                        <img src="./assets/img/home01.jpg" alt="heroImg" class="h-100 w-100 img-fluid">
-                    </div>
-                </div>
+    <!-- threeLines start -->
+        <div class="main position-relative">
+            <div class="threelines">
+                <span class="line"></span>
+                <span class="line"></span>
+                <span class="line"></span>
             </div>
-            <div class="content">
-                <div class="row">
-                    <div class="col-12 col-md-5">
-                        <div class="body_subheading text-white">
-                                WHAT WE OFFER
-                            </div>
-                            <div class="body_heading text-white">
-                                Our Marketing Services
-                        </div>
-                    </div>
-                    <div class="col-12 col-md-7">
-                        <div class="row justify-content-start justify-content-md-end">
-                            <div class="col-12 col-md-8">
-                                <div class="body_text opColor pt-3 pt-md-0">
-                                    Adipiscing elit, sed do euismod tempor incidunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.
-                                        <div class="pt-3">
-                                            Adipiscing elit, sed do euismod tempor incidunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.
-                                        </div>
+            <!-- hero section start -->
+                <div class="container-fluid heroSection">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-12 col-lg-7">
+                                <div class="body_subheading_small mySubheading">
+                                    PAYMENT PROVIDING SERVICES PLATFORM
+                                </div>
+                                <div class="body_heading myHeading">
+                                    The world's top creative Marketing Agency
                                 </div>
                             </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="cardRow">
-                    <div class="row gy-4">
-                        <div class="col-12 col-sm-6 col-md-3">
-                            <div class="mainCard">
-                                <div class="cardImg">
-                                    <img src="./assets/img/glove.svg" alt="cardImage" class="h-100 w-100 img-fluid">
+                            <div class="col-12 col-lg-5">
+                                <div class="body_text mytxt">
+                                    We will optimize your sales funnel, review how we acquire customers and suggest how you could do more effectively by attracting more of them.
                                 </div>
-                                <div class="cardHeading">
-                                    <a href="javascript:;" class="text-decoration-none body_heading_small text-white">
-                                        Global Marketing Program
-                                    </a>
-                                </div>
-                                <div class="cardbtn">
-                                    <a href="javascript:;" class="text-decoration-none">
-                                        <img src="./assets/img/arrowred.svg" alt="arroeimage" class="h-100 w-100 img-fluid">
-                                    </a>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-12 col-sm-6 col-md-3">
-                            <div class="mainCard">
-                                <div class="cardImg">
-                                    <img src="./assets/img/speaker.svg" alt="cardImage" class="h-100 w-100 img-fluid">
-                                </div>
-                                <div class="cardHeading">
-                                    <a href="javascript:;" class="text-decoration-none body_heading_small text-white">
-                                        Public Relations Management
-                                    </a>
-                                </div>
-                                <div class="cardbtn">
-                                    <a href="javascript:;" class="text-decoration-none">
-                                        <img src="./assets/img/arrowred.svg" alt="arroeimage" class="h-100 w-100 img-fluid">
+                                <div class="body_Animation position-relative">
+                                    <a href="javascript:;" class="text-decoration-none waivyanc stretched-link">
+                                        <span class="waviy">
+                                            <span style="--i:1" class="text-dark heading rotatetxt">D</span>
+                                            <span style="--i:2" class="text-dark heading rotatetxt">i</span>
+                                            <span style="--i:3" class="text-dark heading rotatetxt">s</span>
+                                            <span style="--i:4" class="text-dark heading rotatetxt">c</span>
+                                            <span style="--i:5" class="text-dark heading rotatetxt">o</span>
+                                            <span style="--i:6" class="text-dark heading rotatetxt">v</span>
+                                            <span style="--i:7" class="text-dark heading rotatetxt">e</span>
+                                            <span style="--i:8" class="text-dark heading rotatetxt">r</span>
+                                            &nbsp;
+                                            <span style="--i:9" class="text-dark heading rotatetxt">D</span>
+                                            <span style="--i:10" class="text-dark heading rotatetxt">i</span>
+                                            <span style="--i:11" class="text-dark heading rotatetxt">g</span>
+                                            <span style="--i:12" class="text-dark heading rotatetxt">i</span>
+                                            <span style="--i:13" class="text-dark heading rotatetxt">c</span>
+                                            <span style="--i:14" class="text-dark heading rotatetxt">o</span>
+                                            <span style="--i:15" class="text-dark heading rotatetxt">v</span>
+                                            <span style="--i:16" class="text-dark heading ">e</span>
+                                        </span>
+                                        <span class="pinkImage">
+                                        </span>
                                     </a>
                                 </div>
                             </div>
-                        </div>
-                        <div class="col-12 col-sm-6 col-md-3">
-                            <div class="mainCard">
-                                <div class="cardImg">
-                                    <img src="./assets/img/setting.svg" alt="cardImage" class="h-100 w-100 img-fluid">
-                                </div>
-                                <div class="cardHeading">
-                                    <a href="javascript:;" class="text-decoration-none body_heading_small text-white">
-                                        Promotional Events Organizing
-                                    </a>
-                                </div>
-                                <div class="cardbtn">
-                                    <a href="javascript:;" class="text-decoration-none">
-                                        <img src="./assets/img/arrowred.svg" alt="arroeimage" class="h-100 w-100 img-fluid">
-                                    </a>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col-12 col-sm-6 col-md-3">
-                            <div class="mainCard">
-                                <div class="cardImg">
-                                    <img src="./assets/img/aim.svg" alt="cardImage" class="h-100 w-100 img-fluid">
-                                </div>
-                                <div class="cardHeading">
-                                    <a href="javascript:;" class="text-decoration-none body_heading_small text-white">
-                                        Lead Collection & Research
-                                    </a>
-                                </div>
-                                <div class="cardbtn">
-                                    <a href="javascript:;" class="text-decoration-none">
-                                        <img src="./assets/img/arrowred.svg" alt="arroeimage" class="h-100 w-100 img-fluid">
-                                    </a>
-                                </div>
-                            </div>
+                            
                         </div>
                     </div>
                 </div>
-            </div>
-        </div>
-    </div>
-    <!-- sectionTwo Ends -->
-
-    <!-- marquee Section start -->
-        <div class="container-fluid section_spacing marqueeSection overflow-hidden">
-            <div class="container">
-                <div class="row">
-                    <div class="col-12">
-                        <div class="marqueeTxt text-nowrap">
-                            Marketing .  Advertising . Promotion Marketing .  Advertising . Promotion Marketing .  Advertising . Promotion Marketing .  Advertising . Promotion Marketing .  Advertising . Promotion Marketing .  Advertising . Promotion . Marketing .  Advertising . Promotion Marketing .  Advertising . Promotion Marketing .  Advertising . Promotion Marketing .  Advertising . Promotion Marketing .  Advertising . Promotion Marketing .  Advertising . Promotion
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    <!-- marquee Section Ends -->
-
-    <!-- unlock section start -->
-        <div class="container-fluid unlockSection section_spacing">
-            <div class="container">
-                <div class="row">
-                    <div class="col-5">
-                        <div class="imagesSection position-relative">
-                            <div class="unlockimg01">
-                                <img src="./assets/img/unlock01.jpg" alt="unlockImage" class="h-100 w-100 img-fluid">
-                            </div>
-                            <div class="unlockimg02 position-absolute">
-                                <img src="./assets/img/unlock02.jpg" alt="unlockImage" class="h-100 w-100 img-fluid">
+            <!-- hero section ends -->
+        
+            <!-- sectionTwo Start -->
+                <div class="container-fluid setionTwo section_spacing">
+                    <div class="container">
+                        <div class="row justify-content-center">
+                            <div class="col-12">
+                                <div class="BigIamge">
+                                    <img src="./assets/img/home01.jpg" alt="heroImg" class="h-100 w-100 img-fluid">
+                                </div>
                             </div>
                         </div>
-                    </div>
-                    <div class="col-7">
-                        <div class="unlocktxt">
+                        <div class="content">
                             <div class="row">
-                                <div class="col-12">
-                                    <div class="body_heading_large unlocktxtHeading">
-                                        Unlock Revenue Growth for Your Business.
+                                <div class="col-12 col-md-5">
+                                    <div class="body_subheading text-white">
+                                            WHAT WE OFFER
+                                        </div>
+                                        <div class="body_heading text-white">
+                                            Our Marketing Services
                                     </div>
                                 </div>
-                                <div class="col-12">
-                                    <div class="mainCard">
-                                        <div class="row">
-                                            <div class="col-auto">
-                                                <div class="unlockIcon shadow-lg rounded-2">
-                                                    <img src="./assets/img/document.svg" alt="unlockIcon" class="h-100 w-100 img-fluid">
-                                                </div>
-                                            </div>
-                                            <div class="col">
-                                                <div class="unlockIconTxt">
-                                                    <div class="body_subheading">
-                                                        Efficiency & Management
+                                <div class="col-12 col-md-7">
+                                    <div class="row justify-content-start justify-content-md-end">
+                                        <div class="col-12 col-md-8">
+                                            <div class="body_text opColor pt-3 pt-md-0">
+                                                Adipiscing elit, sed do euismod tempor incidunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.
+                                                    <div class="pt-3">
+                                                        Adipiscing elit, sed do euismod tempor incidunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.
                                                     </div>
-                                                    <div class="body_text carddescription">
-                                                        Adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-                                                    </div>
-                                                </div>
                                             </div>
                                         </div>
                                     </div>
-                                    <div class="mainCard">
-                                        <div class="row">
-                                            <div class="col-auto">
-                                                <div class="unlockIcon shadow-lg rounded-2">
-                                                    <img src="./assets/img/layers.svg" alt="unlockIcon" class="h-100 w-100 img-fluid">
-                                                </div>
+                                </div>
+                            </div>
+                            <div class="cardRow">
+                                <div class="row gy-4">
+                                    <div class="col-12 col-sm-6 col-md-3">
+                                        <div class="mainCard">
+                                            <div class="cardImg">
+                                                <img src="./assets/img/glove.svg" alt="cardImage" class="h-100 w-100 img-fluid">
                                             </div>
-                                            <div class="col">
-                                                <div class="unlockIconTxt">
-                                                    <div class="body_subheading">
-                                                        Commitment & Professional
-                                                    </div>
-                                                    <div class="body_text carddescription">
-                                                        Adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-                                                    </div>
-                                                </div>
+                                            <div class="cardHeading">
+                                                <a href="javascript:;" class="text-decoration-none body_heading_small text-white">
+                                                    Global Marketing Program
+                                                </a>
+                                            </div>
+                                            <div class="cardbtn">
+                                                <a href="javascript:;" class="text-decoration-none">
+                                                    <img src="./assets/img/arrowred.svg" alt="arroeimage" class="h-100 w-100 img-fluid">
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-12 col-sm-6 col-md-3">
+                                        <div class="mainCard">
+                                            <div class="cardImg">
+                                                <img src="./assets/img/speaker.svg" alt="cardImage" class="h-100 w-100 img-fluid">
+                                            </div>
+                                            <div class="cardHeading">
+                                                <a href="javascript:;" class="text-decoration-none body_heading_small text-white">
+                                                    Public Relations Management
+                                                </a>
+                                            </div>
+                                            <div class="cardbtn">
+                                                <a href="javascript:;" class="text-decoration-none">
+                                                    <img src="./assets/img/arrowred.svg" alt="arroeimage" class="h-100 w-100 img-fluid">
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-12 col-sm-6 col-md-3">
+                                        <div class="mainCard">
+                                            <div class="cardImg">
+                                                <img src="./assets/img/setting.svg" alt="cardImage" class="h-100 w-100 img-fluid">
+                                            </div>
+                                            <div class="cardHeading">
+                                                <a href="javascript:;" class="text-decoration-none body_heading_small text-white">
+                                                    Promotional Events Organizing
+                                                </a>
+                                            </div>
+                                            <div class="cardbtn">
+                                                <a href="javascript:;" class="text-decoration-none">
+                                                    <img src="./assets/img/arrowred.svg" alt="arroeimage" class="h-100 w-100 img-fluid">
+                                                </a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="col-12 col-sm-6 col-md-3">
+                                        <div class="mainCard">
+                                            <div class="cardImg">
+                                                <img src="./assets/img/aim.svg" alt="cardImage" class="h-100 w-100 img-fluid">
+                                            </div>
+                                            <div class="cardHeading">
+                                                <a href="javascript:;" class="text-decoration-none body_heading_small text-white">
+                                                    Lead Collection & Research
+                                                </a>
+                                            </div>
+                                            <div class="cardbtn">
+                                                <a href="javascript:;" class="text-decoration-none">
+                                                    <img src="./assets/img/arrowred.svg" alt="arroeimage" class="h-100 w-100 img-fluid">
+                                                </a>
                                             </div>
                                         </div>
                                     </div>
@@ -246,10 +387,379 @@
                         </div>
                     </div>
                 </div>
+            <!-- sectionTwo Ends -->
+        
+            <!-- marquee Section start -->
+                <div class="container-fluid section_spacing marqueeSection overflow-hidden">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-12">
+                                <div class="marqueeTxt text-nowrap">
+                                    Marketing .  Advertising . Promotion Marketing .  Advertising . Promotion Marketing .  Advertising . Promotion Marketing .  Advertising . Promotion Marketing .  Advertising . Promotion Marketing .  Advertising . Promotion . Marketing .  Advertising . Promotion Marketing .  Advertising . Promotion Marketing .  Advertising . Promotion Marketing .  Advertising . Promotion Marketing .  Advertising . Promotion Marketing .  Advertising . Promotion
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            <!-- marquee Section Ends -->
+        
+            <!-- unlock section start -->
+                <div class="container-fluid unlockSection section_spacing">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-10 col-sm-9 col-lg-6 col-xl-5">
+                                <div class="imagesSection position-relative">
+                                    <div class="unlockimg01">
+                                        <img src="./assets/img/unlock01.jpg" alt="unlockImage" class="h-100 w-100 img-fluid">
+                                    </div>
+                                    <div class="unlockimg02 position-absolute">
+                                        <img src="./assets/img/unlock02.jpg" alt="unlockImage" class="h-100 w-100 img-fluid">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-12 col-lg-6 col-xl-7">
+                                <div class="unlocktxt">
+                                    <div class="row">
+                                        <div class="col-12">
+                                            <div class="body_heading_large unlocktxtHeading">
+                                                Unlock Revenue Growth for Your Business.
+                                            </div>
+                                        </div>
+                                        <div class="col-12">
+                                            <div class="mainCard">
+                                                <div class="row">
+                                                    <div class="col-auto">
+                                                        <div class="unlockIcon shadow-lg rounded-2">
+                                                            <img src="./assets/img/document.svg" alt="unlockIcon" class="h-100 w-100 img-fluid">
+                                                        </div>
+                                                    </div>
+                                                    <div class="col">
+                                                        <div class="unlockIconTxt">
+                                                            <div class="body_subheading">
+                                                                Efficiency & Management
+                                                            </div>
+                                                            <div class="body_text carddescription">
+                                                                Adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <div class="mainCard">
+                                                <div class="row">
+                                                    <div class="col-auto">
+                                                        <div class="unlockIcon shadow-lg rounded-2">
+                                                            <img src="./assets/img/layers.svg" alt="unlockIcon" class="h-100 w-100 img-fluid">
+                                                        </div>
+                                                    </div>
+                                                    <div class="col">
+                                                        <div class="unlockIconTxt">
+                                                            <div class="body_subheading">
+                                                                Commitment & Professional
+                                                            </div>
+                                                            <div class="body_text carddescription">
+                                                                Adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-12">
+                                            <div class="mainBtndiv">
+                                                <button class="btn mainBtn" type="button"> 
+                                                    <div class="body_Animation position-relative">
+                                                        <a href="javascript:;" class="text-decoration-none waivyanc stretched-link">
+                                                            <span class="waviy">
+                                                                <span style="--i:1" class="text-dark heading rotatetxt">L</span>
+                                                                <span style="--i:2" class="text-dark heading rotatetxt">e</span>
+                                                                <span style="--i:3" class="text-dark heading rotatetxt">t</span>
+                                                                <span style="--i:4" class="text-dark heading rotatetxt">s</span>
+                                                                &nbsp;
+                                                                <span style="--i:5" class="text-dark heading rotatetxt">C</span>
+                                                                <span style="--i:6" class="text-dark heading rotatetxt">o</span>
+                                                                <span style="--i:7" class="text-dark heading rotatetxt">l</span>
+                                                                <span style="--i:8" class="text-dark heading rotatetxt">l</span>
+                                                                <span style="--i:9" class="text-dark heading rotatetxt">a</span>
+                                                                <span style="--i:10" class="text-dark heading rotatetxt">b</span>
+                                                                <span style="--i:11" class="text-dark heading rotatetxt">o</span>
+                                                                <span style="--i:12" class="text-dark heading rotatetxt">r</span>
+                                                                <span style="--i:13" class="text-dark heading rotatetxt">a</span>
+                                                                <span style="--i:14" class="text-dark heading rotatetxt">t</span>
+                                                                <span style="--i:15" class="text-dark heading rotatetxt">e</span>
+                                                            </span>
+                                                        </a>
+                                                    </div>
+                                                </button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            <!-- unlock section Ends -->
+        </div>
+    <!-- threeLines emds -->
+    
+    
+
+
+
+
+
+
+
+    <!-- nav offcanvas start -->
+        <div class="offcanvas offcanvas-start text-bg-dark bg-white d-xl-none d-block mobileOffcanvas" tabindex="-1" id="offcanvasNavbar2" aria-labelledby="offcanvasNavbar2Label">
+            <div class="offcanvas-header">
+            <div class="offcanvas-title d-flex align-items-center logomobile" id="offcanvasNavbar2Label"><img src="assets/img/navbar/mobilelogo.png" alt="logo" class="img-fluid w-100 h-100"></div>
+            <button type="button" class=" border-0 shadow-none border-0 bg-transparent" data-bs-dismiss="offcanvas" aria-label="Close"> <span class="closeBtn d-inline-flex align-items-center"> <img src="assets/img/navbar/Close.png" alt="close" class="img-fluid w-100 h-100"></span></button>
+            </div>
+            <div class="offcanvas-body">
+            <div class="input-group mb-3 inputGroup">
+                <input type="text" class="form-control border-0 shadow-none bg-transparents inputSearch" placeholder="Search" aria-label="Recipient's username" aria-describedby="basic-addon2">
+                <span class="input-group-text searchIcon" id="basic-addon2"><img src="assets/img/navbar/search.svg" alt="search" class="img-fluid w-100 h-100"></span>
+            </div>
+            <div class="accordion mobileAccordion" id="accordionExample">
+                <div class="accordion-item itemAccordion">
+                <div class="accordion-header">
+                    <button class="accordion-button accordionBtn active" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                    Home
+                    </button>
+                </div>
+                <div id="collapseOne" class="accordion-collapse collapse " data-bs-parent="#accordionExample">
+                    <div class="accordion-body p-0">
+                    <ul class="mobileMenu list-unstyled">
+                        <li>
+                            <a href="javascript:;" class="subMenuLink d-flex align-items-center active">
+                            <span class="d-inline-flex align-items-center innerSubMenu">Home IT Service</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="javascript:;" class="subMenuLink d-flex align-items-center">
+                            <span class="d-inline-flex align-items-center innerSubMenu">Home Digital Marketing</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="javascript:;" class="subMenuLink d-flex align-items-center">
+                            <span class="d-inline-flex align-items-center innerSubMenu">Home SEO Service (Light)</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="javascript:;" class="subMenuLink d-flex align-items-center">
+                            <span class="d-inline-flex align-items-center innerSubMenu">Home SEO Service (Dark)</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="javascript:;" class="subMenuLink d-flex align-items-center">
+                            <span class="d-inline-flex align-items-center innerSubMenu">Home Lead Capture</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="javascript:;" class="subMenuLink d-flex align-items-center">
+                            <span class="d-inline-flex align-items-center innerSubMenu">Home Digital Studio</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="javascript:;" class="subMenuLink d-flex align-items-center">
+                            <span class="d-inline-flex align-items-center innerSubMenu">Home Startup</span>
+                            </a>
+                        </li>
+                    </ul>
+                    </div>
+                </div>
+                </div>
+                <div class="accordion-item itemAccordion">
+                <div class="accordion-header">
+                    <button class="accordion-button accordionBtn" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="true" aria-controls="collapseOne">
+                    Pages
+                    </button>
+                </div>
+                <div id="collapseTwo" class="accordion-collapse collapse " data-bs-parent="#accordionExample">
+                    <div class="accordion-body p-0">
+                    <ul class="mobileMenu list-unstyled">
+                        <li>
+                            <a href="javascript:;" class="subMenuLink d-flex align-items-center">
+                            <span class="d-inline-flex align-items-center innerSubMenu">About</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="javascript:;" class="subMenuLink d-flex align-items-center">
+                            <span class="d-inline-flex align-items-center innerSubMenu">Our Team</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="javascript:;" class="subMenuLink d-flex align-items-center">
+                            <span class="d-inline-flex align-items-center innerSubMenu">Team Single</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="javascript:;" class="subMenuLink d-flex align-items-center">
+                            <span class="d-inline-flex align-items-center innerSubMenu">Contact</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="javascript:;" class="subMenuLink d-flex align-items-center">
+                            <span class="d-inline-flex align-items-center innerSubMenu">FAQs</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="javascript:;" class="subMenuLink d-flex align-items-center">
+                            <span class="d-inline-flex align-items-center innerSubMenu">Pricing Table</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="javascript:;" class="subMenuLink d-flex align-items-center">
+                            <span class="d-inline-flex align-items-center innerSubMenu">404</span>
+                            </a>
+                        </li>
+                    </ul>
+                    </div>
+                </div>
+                </div>
+                <div class="accordion-item itemAccordion">
+                <div class="accordion-header">
+                    <button class="accordion-button accordionBtn" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="true" aria-controls="collapseThree">
+                    Services
+                    </button>
+                </div>
+                <div id="collapseThree" class="accordion-collapse collapse " data-bs-parent="#accordionExample">
+                    <div class="accordion-body p-0">
+                    <ul class="mobileMenu list-unstyled">
+                        <li>
+                            <a href="javascript:;" class="subMenuLink d-flex align-items-center">
+                            <span class="d-inline-flex align-items-center innerSubMenu">Our Services 1</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="javascript:;" class="subMenuLink d-flex align-items-center">
+                            <span class="d-inline-flex align-items-center innerSubMenu">Our Services 2</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="javascript:;" class="subMenuLink d-flex align-items-center">
+                            <span class="d-inline-flex align-items-center innerSubMenu">Service Single</span>
+                            </a>
+                        </li>
+                        <!-- <li>
+                            <a href="javascript:;" class="subMenuLink d-flex align-items-center">
+                            <span class="d-inline-flex align-items-center innerSubMenu">Home SEO Service (Dark)</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="javascript:;" class="subMenuLink d-flex align-items-center">
+                            <span class="d-inline-flex align-items-center innerSubMenu">Home Lead Capture</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="javascript:;" class="subMenuLink d-flex align-items-center">
+                            <span class="d-inline-flex align-items-center innerSubMenu">Home Digital Studio</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="javascript:;" class="subMenuLink d-flex align-items-center">
+                            <span class="d-inline-flex align-items-center innerSubMenu">Home Startup</span>
+                            </a>
+                        </li> -->
+                    </ul>
+                    </div>
+                </div>
+                </div>
+                <div class="accordion-item itemAccordion">
+                <div class="accordion-header">
+                    <button class="accordion-button accordionBtn" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="true" aria-controls="collapseFour">
+                    Portfolio
+                    </button>
+                </div>
+                <div id="collapseFour" class="accordion-collapse collapse " data-bs-parent="#accordionExample">
+                    <div class="accordion-body p-0">
+                    <ul class="mobileMenu list-unstyled">
+                        <li>
+                            <a href="javascript:;" class="subMenuLink d-flex align-items-center">
+                            <span class="d-inline-flex align-items-center innerSubMenu">Portfolio Style 1</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="javascript:;" class="subMenuLink d-flex align-items-center">
+                            <span class="d-inline-flex align-items-center innerSubMenu">Portfolio Style 2</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="javascript:;" class="subMenuLink d-flex align-items-center">
+                            <span class="d-inline-flex align-items-center innerSubMenu">Portfolio Style 3</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="javascript:;" class="subMenuLink d-flex align-items-center">
+                            <span class="d-inline-flex align-items-center innerSubMenu">Portfolio Details</span>
+                            </a>
+                        </li>
+                    </ul>
+                    </div>
+                </div>
+                </div>
+                <div class="accordion-item itemAccordion">
+                <div class="accordion-header">
+                    <button class="accordion-button accordionBtn" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFive" aria-expanded="true" aria-controls="collapseFive">
+                    Blog
+                    </button>
+                </div>
+                <div id="collapseFive" class="accordion-collapse collapse " data-bs-parent="#accordionExample">
+                    <div class="accordion-body p-0">
+                    <ul class="mobileMenu list-unstyled">
+                        <li>
+                            <a href="javascript:;" class="subMenuLink d-flex align-items-center">
+                            <span class="d-inline-flex align-items-center innerSubMenu">Blog Grid</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="javascript:;" class="subMenuLink d-flex align-items-center">
+                            <span class="d-inline-flex align-items-center innerSubMenu">Blog Single</span>
+                            </a>
+                        </li>
+                    </ul>
+                    </div>
+                </div>
+                </div>
+                <div class="accordion-item itemAccordion">
+                <div class="accordion-header">
+                    <button class="accordion-button accordionBtn" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFive" aria-expanded="true" aria-controls="collapseFive">
+                    Shop
+                    </button>
+                </div>
+                <div id="collapseFive" class="accordion-collapse collapse " data-bs-parent="#accordionExample">
+                    <div class="accordion-body p-0">
+                    <ul class="mobileMenu list-unstyled">
+                        <li>
+                            <a href="javascript:;" class="subMenuLink d-flex align-items-center">
+                            <span class="d-inline-flex align-items-center innerSubMenu">Shop</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="javascript:;" class="subMenuLink d-flex align-items-center">
+                            <span class="d-inline-flex align-items-center innerSubMenu">Cart</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="javascript:;" class="subMenuLink d-flex align-items-center">
+                            <span class="d-inline-flex align-items-center innerSubMenu">Checkout</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="javascript:;" class="subMenuLink d-flex align-items-center">
+                            <span class="d-inline-flex align-items-center innerSubMenu">Wishlist</span>
+                            </a>
+                        </li>
+                    </ul>
+                    </div>
+                </div>
+                </div>
+            </div>
             </div>
         </div>
-    <!-- unlock section Ends -->
-    
+    <!-- nav offcanvas end -->
 
 </body>
 

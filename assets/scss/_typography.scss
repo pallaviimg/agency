@@ -89,8 +89,8 @@
 
 .body_heading{
     color: $black;
-    font-size: 30px;
-    font-weight: 700;
+    font-size: 25px;
+    font-weight: 600;
     line-height: 130%;
     @include sm{
         font-size: 35px;
@@ -130,7 +130,7 @@
 
 .body_heading_large{
     color: $black;
-    font-size: 25px;
+    font-size: 24px;
     font-weight: 600;
     line-height: 125%;
     @include sm{
@@ -140,10 +140,10 @@
         font-size: 35px;
     }
     @include lg{
-        font-size: 40px;
+        font-size: 30px;
     }
     @include xl{
-        font-size: 45px;
+        font-size: 40px;
     }@include xxl{
         font-size: 48px;
     }
@@ -152,11 +152,11 @@
 // For Subheading
 
 .body_subheading{
-    font-size: 17px;
+    font-size: 15px;
     font-weight: 600;
     color: $black;
     @include lg{
-        font-size: 18px;
+        font-size: 17px;
     }
     @include xl{
         font-size: 20px;
@@ -166,9 +166,9 @@
 }
 
 .body_subheading_small{
-    font-size: 12px;
+    font-size: 13px;
     font-weight: 700;
-    color: $gray-600;
+    color: $black;
     @include sm{
 
     }

@@ -32,3 +32,62 @@
         transform: translateY(-30%)
     }
 }
+
+.mainBtn{
+    display: inline-flex !important;
+    align-items: center !important;
+    font-size: 16px !important;
+    font-weight: 600 !important;
+    color: $white !important;
+    padding: 8px 20px 8px 20px !important;
+    line-height: 34px !important;
+    letter-spacing: .005em !important;
+    border-radius: 10px !important;
+    transition: .5s;
+    position: relative;
+    cursor: pointer;
+    box-shadow: 0 4px 30px rgba(89,100,255,.1) !important;
+    background: linear-gradient(90deg,#ff7369 0%,#ffb06d 100%) !important;
+    height: auto !important;
+    overflow: hidden !important;
+    @include md{    
+        padding: 11px 25px 12px 25px !important;
+    }
+    @include lg{    
+        padding: 11px 40px 12px 36px !important;
+    }
+    & .body_Animation{
+        & .waivyanc{
+        }
+        & .waviy{
+            position: relative;
+            font-size: 15px;
+            font-weight: 700;
+            @include md{
+                font-size: 16px;
+            }
+            & span{
+                transition: all .3s ease-in-out;
+            }
+            & .rotatetxt{
+                color: $white !important;
+                margin-left: -4px;
+            }
+        }
+        &:hover{
+            & .waviy{
+                & span{
+                    position: relative;
+                    display: inline-block;
+                    animation: flip .3s 1;
+                    animation-delay: calc(.11s*var(--i));
+                }
+            }
+        }
+        @keyframes flip{
+            50% {
+                transform: scaleX(0);
+            }
+        }
+    }
+}
