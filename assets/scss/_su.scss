@@ -26,13 +26,7 @@
 // hero section start
     .heroSection{
         padding-top: 30px;
-        height: 65vh;
-        @include sm{
-            height: 85vh;
-        }
-        @include md{
-            height: 100vh;
-        }
+        padding-bottom: 30%;
         @include xxl{
             padding-top: 130px;
         }
@@ -105,7 +99,7 @@
                     z-index: -1;
                     top: 50%;
                     transform: translateY(-50%);
-                    clip-path: polygon(54% 9%, 83% 12%, 100% 43%, 94% 85%, 68% 100%, 32% 100%, 6% 78%, 3% 34%, 30% 18%);
+                    clip-path: polygon(50% 0%, 80% 10%, 100% 35%, 100% 70%, 75% 94%, 50% 100%, 20% 90%, 0% 70%, 0% 35%, 20% 10%);
                     right: -35px;
                 }
             }
@@ -122,7 +116,6 @@
         }
         @keyframes flip{
             50% {
-                // transform: rotateY(360deg);
                 transform: scaleX(0);
             }
         }
@@ -135,20 +128,10 @@
         & .BigIamge{
             overflow: hidden;
             border-radius: 15px;
-            margin-top: -105px;
+            margin-top: -30%;
             aspect-ratio: 2/1;
-            @include sm{
-                margin-top: -255px;
-            }
-            @include md{
-                margin-top: -350px;
-            }
-            @include lg{
-                margin-top: -400px;
-            }
-            @include xxl{
-                margin-top: -320px;
-            }
+            object-fit: cover;
+            
             & img{
                 overflow: hidden;
                 transform: scale3d(1.5,1.5,1);
@@ -190,8 +173,8 @@
                 padding-left: 0px;
                 padding-right: 8px;
                 padding-block: 20px;
-                @include xl{
-                    padding-left: 20px;
+                @include sm{
+                    padding-inline: 20px;
                 }
                 & .cardImg{
                     height: 40px;
@@ -222,12 +205,19 @@
                 &::after{
                     content: "";
                     position: absolute;
-                    top: 0;
+                    bottom: 0%;
+                    left: 0;
                     right: 0%;
-                    height: 100%;
-                    width: 1px;
+                    height: 1px;
+                    width: 100%;
                     background-color: #F2F2F2;
                     opacity: 0.4;
+                    @include sm{
+                        top: 0;
+                        right: 0%;
+                        height: 100%;
+                        width: 1px;
+                    }
                 }
                 &:hover{
                     & .cardImg{
