@@ -242,7 +242,6 @@
     .marqueeSection{
         & .marqueeTxt{
             margin-bottom: 0;
-            font-family: poppin,Sans-serif;
             position: relative;
             font-size: 30px;
             font-weight: 700;
@@ -275,7 +274,7 @@
     }
 // marquee Section Ends
 
-// unlock Section start
+// sectionThree start
     .unlockSection{
         & .imagesSection{
             & .unlockimg01{
@@ -360,4 +359,541 @@
             }
         }
     }
-// unlock Section Ends
+// sectionThree Ends
+
+// section Four start
+    .sectionFour{
+        & .navTabs{
+            border: 0 !important;
+            & .navItem{
+                border: 0 !important;
+                box-shadow: none !important;
+                & .navLink{
+                    border: 0 !important;
+                    color: $black !important;
+                    font-size: 17px !important;
+                    font-weight: 600 !important;
+                    &.active{
+                        color: $theme1 !important;
+                    }
+                    @include lg{
+                        font-size: 16px !important;
+                    }
+                    @include xl{
+                        font-size: 18px !important;
+                    }
+                }
+            }
+        }
+        & .tabContent{
+            margin-top: 30px;
+            @include sm{
+                margin-top: 50px;
+            }
+            @include md{
+                margin-top: 60px;
+            }
+            @include lg{
+                margin-top: 70px;
+            }
+            @include xl{
+                margin-top: 100px;
+            }
+            & .sec0401img{
+                aspect-ratio: 1/1;
+            }
+            & .sec0402img{
+                aspect-ratio: 1/2.08;
+            }
+            & .sec0403img{
+                aspect-ratio: 1/1;
+            }
+            & .sec0404img{
+                aspect-ratio: 1/1;
+            }
+            & .sectionImg{
+                object-fit: cover;
+                position: relative;
+                &:hover{
+                    & .hoverDiv{
+                        opacity: 1;
+                        visibility: visible;
+                    }
+                }
+            }
+            & .hoverDiv{
+                position: absolute;
+                bottom: 0%;
+                right: 0;
+                background-color: $black;
+                color: $white;
+                padding: 10px 40px 10px 10px;
+                font-size: 16px;
+                line-height: 180%;
+                font-weight: 600;
+                width: 260px;
+                opacity: 0;
+                visibility: hidden;
+                transition: all .3s ease-in-out;
+                @include sm{
+                    padding: 10px 50px 10px 15px;
+                    font-size: 18px;
+                }
+                @include lg{
+                    padding: 20px 80px 20px 25px;
+                    font-size: 20px;
+                }
+            }
+        }
+    }
+    .inner{
+        aspect-ratio: 2/1;
+        object-fit: cover;
+        position: relative;
+        z-index: 2;
+        &::after{
+            content: "";
+            position: absolute;
+            height: 100%;
+            width: 100%;
+            top: 0%;
+            left: 0%;
+            right: 0%;
+            background-color: rgba(0, 0, 0, 0.5);
+        }
+        
+    }
+// section Four Ends
+
+// section Five start
+    .sectionFive{
+        & .mainPageInner{
+            aspect-ratio: 2/1;
+            @include md{
+            aspect-ratio: 3/1;
+            }
+        }
+    }
+// section Five Ends
+
+// section Six start
+    .sectionSix{
+        position: relative;
+        &::after{
+            @include md{
+                display: none;
+            }
+            @include lg{
+                display: inline-block;
+                content: "";
+                position: absolute;
+                top: 50%;
+                right: 15%;
+                transform: translateY(-50%);
+                text-decoration: dotted;
+                height: 2px;
+                width: 70%;
+                border-top: 2px dashed black;
+                z-index: -1;
+                opacity: 0.3;
+            }
+        }
+        & .cardDiv{
+            margin-top: 30px;
+            @include sm{
+                margin-top: 40px;
+            }
+            @include md{
+                margin-top: 60px;
+            }
+            @include lg{
+                margin-top: 80px;
+            }
+            @include xl{
+                margin-top: 100px;
+            }
+            & .mainCard{
+                & .cardCircle{
+                    position: relative;
+                    & .cardImg{
+                        aspect-ratio: 1/1;
+                        object-fit: cover;
+                        border-radius: 50%;
+                        overflow: hidden;
+                    }
+                    & .threeDiv{
+                        position: absolute;
+                        bottom: -22px;
+                        left: 50%;
+                        transform: translateX(-50%);
+                        width: 46px;
+                        height: 46px;
+                        border-radius: 50%;
+                        z-index: 1;
+                        background: linear-gradient(90deg,#ff7369 0%,#ffb06d 100%);
+                        &::after{
+                            content: '';
+                            position: absolute;
+                            width: 10px;
+                            height: 10px;
+                            border-radius: 50%;
+                            background-color: #fdfdfd;
+                            top: 50%;
+                            left: 50%;
+                            transform: translate(-50%,-50%);
+                            z-index: 2;
+                        }
+                        &::before{
+                            content: '';
+                            position: absolute;
+                            width: 56px;
+                            height: 56px;
+                            border-radius: 50%;
+                            top: 50%;
+                            left: 50%;
+                            transform: translate(-50%,-50%);
+                            opacity: .3;
+                            z-index: -1;
+                            background: linear-gradient(90deg,#ff7369 0%,#ffb06d 100%);
+                        }
+                        
+                    }
+                }
+                & .cardHEading{
+                    padding-top: 50px;
+                    text-align: center;
+                    opacity: 0.8;
+                    display: -webkit-box;
+                    -webkit-line-clamp: 2;
+                    -webkit-box-orient: vertical;
+                    overflow: hidden;
+                    text-overflow: ellipsis;
+                }
+                & .cardDescription{
+                    padding-top: 15px;
+                    text-align: center;
+                    opacity: 0.6;
+                    font-weight: 500;
+                    display: -webkit-box;
+                    -webkit-line-clamp: 5;
+                    -webkit-box-orient: vertical;
+                    overflow: hidden;
+                    text-overflow: ellipsis;
+                }
+            }
+        }
+    }
+// section Six Ends
+
+// news Section Start
+    .newsSection{
+        & .mainHaeding{
+            color: $theme1;
+        }
+        & .mainCardDiv{
+            margin-top: 0px;
+            @include sm{
+                margin-top: 40px;
+            }
+            @include md{
+                margin-top: 60px;
+            }
+            @include lg{
+                margin-top: 80px;
+            }
+            @include xl{
+                margin-top: 100px;
+            }
+            & .mainCard{
+                margin-block: 10px;
+                border-radius: 0 15px 15px 0;
+                & .cardImage{
+                    aspect-ratio: 1/1;
+                    object-fit: cover;
+                }
+                & .cardHeading{
+                    font-size: 18px;
+                    font-weight: 700;
+                    opacity: 0.8;
+                    text-align: left !important;
+                    padding-block: 25px;
+                    & .colorChange{
+                        color: $theme1;
+                    }
+                }
+                & .cardSubheading{
+                    text-align: left;
+                    opacity: 0.9;
+                    position: relative;
+                    // &::after{
+                    //     content: '';
+                    //     position: absolute;
+                    //     bottom: 0;
+                    //     left: 0;
+                    //     background-color: $theme1;
+                    //     height: 1px;
+                    //     width: 100%;
+                    // }
+                }
+            }
+        }
+        & .arrowDiv{
+            position: relative;
+            display: flex;
+            justify-content: end;
+            align-items: center;
+            & .swiper-button-next{
+                position: absolute;
+                top: 50%;
+                left: 0%;
+                border-radius: 50%;
+                height: 50px;
+                width: 50px;
+                @include sm{
+                    left: 50%;
+                }
+                & .arrowImg{
+                    height: 80px;
+                    width: 30px;
+                    transform: rotate(180deg);
+                }
+                &::after{
+                    content: "";
+                }
+            }
+            & .swiper-button-prev{
+                position: absolute;
+                top: 50%;
+                height: 50px;
+                width: 50px;
+                border-radius: 50%;
+                left: 20%;
+                @include sm{
+                    left: 72%;
+                }
+                @include md{
+                    left: 68%;
+                }
+                @include lg{
+                    left: 65%;
+                }
+                @include xl{
+                    left: 62%;
+                }
+                & .arrowImg{
+                    height: 80px;
+                    width: 30px;
+                }
+                &::after{
+                    content: "";
+                }
+            }
+        }
+        & .swiper-pagination{
+            position: absolute;
+            bottom: -3% !important;
+            & .swiper-pagination-bullet{
+                background-color: $black !important;
+                opacity: 1;
+            }
+            & .swiper-pagination-bullet-active{
+                background-color: $theme1 !important;
+            }
+        }
+    }
+// news Section ends
+
+// logo Section start
+    .logoSection{
+        & .doubleImg{
+            padding: 5px;
+            overflow: hidden;
+            position: relative;
+            @include sm{
+                padding: 8px;
+            }
+            @include lg{
+                padding: 15px;
+            }
+            & .logoSecImg{
+                filter: grayscale(1);
+                aspect-ratio: 1/1;
+                @include sm{
+                    aspect-ratio: 2/1;
+                }
+                &.logoSecImgOne{
+                    opacity: 1;
+                    visibility: visible;
+                    transition: all .5s ease-in-out;
+                    object-fit: cover;
+                }
+                &.logoSecImgTwo{
+                    position: absolute;
+                    opacity: 0;
+                    visibility: hidden;
+                    transform: translateY(100%);
+                    transition: all .5s ease-in-out;
+                    object-fit: cover;
+                }
+            }
+            &:hover{
+                & .logoSecImgOne{
+                    visibility: hidden;
+                    opacity: 0;
+                }
+                & .logoSecImgTwo{
+                    transform: translateY(-100%);
+                    opacity: 1;
+                    visibility: visible;
+                }
+            }
+        }
+    }
+// logo Section Ends
+
+// git Section start
+    .gitSection{
+        & .gitHeading{
+            color: $white;
+            padding-bottom: 20px;
+        }
+        & .gitSubheading{
+            color: $white;
+            line-height: 140%;
+            padding-right: 0px;
+            padding-bottom: 10px;
+            
+            @include xl{
+                padding-right: 90px;
+            }
+        }
+        & .gitdes{
+            color: $white;
+            opacity: 0.7;
+            // margin-top: 150px;
+            // @include sm{
+            //     margin-top: 50px;
+            // }
+            // @include md{
+            //     margin-top: 150px;
+            // }
+        }
+        & .numberDiv{
+            padding-top: 15px;
+            & .number{
+                color: $white;
+                transition: all .3s ease-in-out;
+                &:hover{
+                    color: $theme1;
+                }
+            }
+        }
+        & .formSide{
+            & .formLabelInput{
+                padding: 10px ;
+                color: $white;
+                box-shadow: none;
+                opacity: 0.6;
+                background: transparent !important;
+                &:focus{
+                    border-color: inherit !important;
+                }
+                &::placeholder{
+                    color: $white;
+                    opacity: 0.6;
+                    font-weight: 500;
+                }
+            }
+        }
+    }
+// git Section End
+
+// footer Section start
+    .footerSection{
+        & .lineOne{
+            & .logo{
+                height: 34px;
+                width: 180px;
+                object-fit: cover;
+                @include md{
+                    height: 34px;
+                    width: 180px;
+                }
+                @include xl{
+                    height: 44px;
+                    width: 220px;
+                }
+            }
+            & .address{
+                & .addIcon{
+                    height: 15px;
+                    width: 15px;
+                }
+                &.common{
+                    padding-top: 20px;
+                    @include xl{
+                        padding-top: 30px;
+                    }
+                }
+                & .addresstxt{
+                    color: $white;
+                    font-size: 15px;
+                    font-weight: 600;
+                }
+            }
+        }
+        & .lineTwo{
+            & .MainHeading{
+                font-size: 20px;
+                font-weight: 600;
+                color: $theme1;
+                // padding-top: 20PX;
+            }
+            & .mainCommon{
+                padding-top: 12px;
+            }
+            & .maintxt{
+            }
+            & .maintxtanc{
+                font-size: 15px;
+                font-weight: 600;
+                color: $white;
+            }
+        }
+        & .lineFour{
+            & .mianiHEading{
+                font-size: 20px;
+                color: $theme1;
+                padding-top: 20px;
+            }
+            & .socialLinks{
+                padding-top: 10px;
+                & .socialImg{
+                        height: 35px;
+                        width: 35px;
+                        object-fit: cover;
+                        background-color: #252525;
+                        border-radius: 50%;
+                        overflow: hidden;
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                        @include xl{
+                            height: 40px;
+                            width: 40px;
+                        }
+                    & .socialImgAnc{
+                        
+                    }
+                }
+            }
+            & .copyRight{
+                & .copyRightAnc{
+                    color: $white;
+                    font-size: 15px;
+                    font-weight: 600;
+                }
+            }
+        }
+    }
+// footer Section Ends

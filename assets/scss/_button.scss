@@ -47,7 +47,7 @@
     position: relative;
     cursor: pointer;
     box-shadow: 0 4px 30px rgba(89,100,255,.1) !important;
-    background: linear-gradient(90deg,#ff7369 0%,#ffb06d 100%) !important;
+    background: linear-gradient(90deg,$theme1 0%,#ffb06d 100%) !important;
     height: auto !important;
     overflow: hidden !important;
     @include md{    
@@ -90,4 +90,37 @@
             }
         }
     }
+}
+
+.playbtn{
+    color: $theme1;
+    font-size: 16px;
+    font-weight: 600;
+    z-index: 30000;
+    border: 1px solid $theme1;
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    @include sm{
+        height: 60px;
+        width: 60px;
+        font-size: 19px;
+    }
+    @include md{
+        height: 80px;
+        width: 80px;
+        font-size: 21px;
+    }
+    @include lg{
+        height: 100px;
+        width: 100px;
+        font-size: 25px;
+    }
+}
+
+.talkbtn{
+    padding: 6px 20px 6px 20px !important;
 }

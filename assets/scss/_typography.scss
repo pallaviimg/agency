@@ -20,8 +20,7 @@
 }
 
 .body_text_small{
-    font-size: 14px;
-    color: $black;
+    font-size: 16px;
     line-height: 1.6;
     @include sm{
 
@@ -186,22 +185,20 @@
 }
 
 .body_subheading_large{
-    font-size: 15px;
-    font-weight: 700;
-    color: $gray-600;
+    font-size: 18px;
+    font-weight: 600;
+    line-height: 130%;
+    color: $black;
     @include sm{
-
+        font-size: 20px;        
     }
     @include md{
-        
-    }
-    @include lg{
-        
+        font-size: 22px;        
     }
     @include xl{
-        
+        font-size: 24px;
     }@include xxl{
-        
+        font-size: 29px;
     }
 }
 .opColor{
