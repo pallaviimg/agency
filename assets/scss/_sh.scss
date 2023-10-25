@@ -20,11 +20,11 @@
     }
     & .navbar-toggler{
         & .menuIcon{
-            width: 25px;
-            height:25px;
+            width: 20px;
+            height:20px;
             @include sm{
-                width: 35px;
-                height:35px;
+                width: 30px;
+                height:30px;
             }
         }
     }
